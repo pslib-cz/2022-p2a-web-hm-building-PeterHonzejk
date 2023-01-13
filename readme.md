@@ -1,1 +1,1 @@
-https://PeterHonzejk.github.io
+https://peterhonzejk.github.io
