@@ -91,19 +91,8 @@ body {
     border-radius: 0 0 0 30px;
 }
 
+
 .service__content {
-    margin-bottom: 2em;
-}
-
-.reference:nth-child(2n) > .reference__image {
-    border-radius: 0 0 30px 0;
-}
-
-.reference:nth-child(2n + 1) > .reference__image {
-    border-radius: 0 0 0 30px;
-}
-
-.reference__content {
     margin-bottom: 2em;
 }
 
@@ -135,6 +124,18 @@ body {
 
 .references {
     margin-bottom: 6em;
+}
+
+.reference:nth-child(2n) > .reference__image {
+    border-radius: 0 0 30px 0;
+}
+
+.reference:nth-child(2n + 1) > .reference__image {
+    border-radius: 0 0 0 30px;
+}
+
+.reference__content {
+    margin-bottom: 2em;
 }
 
 .cover {
