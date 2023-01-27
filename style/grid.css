@@ -1,0 +1,33 @@
+.services-container {
+    display: grid;
+    grid-template-columns: 1.5em 1fr 1.5em;
+    grid-template-areas: ". ar1 ." ". ar2 ." ". ar3 ." ". ar4 ." ". ar5 .";
+    row-gap: 40px;
+}
+
+.service--services {grid-area: ar1;}
+.service--new-buildings {grid-area: ar2;}
+.service--industrial {grid-area: ar3;}
+.service--reconstruction {grid-area: ar4;}
+.service--communication {grid-area: ar5;}
+
+
+.references {
+    display: grid;
+    grid-template-columns: 1.5em 1fr 1.5em;
+    grid-template-areas: ". text ." ". ref1 ." ". ref2 ." ". ref3 ." ". more .";
+    justify-items: center;
+}
+
+.references-text {grid-area: text;}
+.reference--firefighter {grid-area: ref1;}
+.reference--laundry {grid-area: ref2;}
+.reference--restyl {grid-area: ref3;}
+.more {grid-area: more;}
+
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+}
