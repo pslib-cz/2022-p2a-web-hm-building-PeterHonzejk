@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HM | Home</title>
+    <title>HM | References</title>
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/typography.css">
     <link rel="stylesheet" href="./style/main.css">
@@ -12,12 +12,65 @@
     <link rel="stylesheet" href="./style/flex.css">
 </head>
 <body>
-    <header class="header">
-       
+    <div class="cover navbar__menu--hidden"></div>
+    <header class="header header--no-image">
+        <nav class="navbar">
+            <a href="./index.html"><img class="navbar__logo" src="./media/logo.png" alt="HM Building.cz logo"></a>
+            <a class="navbar__hamburger" href="javascript:void(0);">
+                <span class="navbar__hamburger-text">MENU</span>
+                <img src="./media/svg/hamburger.svg" alt="hamburger menu">
+            </a>
+            <menu class="navbar__menu navbar__menu--hidden">
+                <ul>
+                    <li><a class="navbar__item" href="./index.html">DOMŮ</a></li>
+                    <li><a class="navbar__item" href="./index.html#services">SLUŽBY</a></li>
+                    <li><a class="navbar__item" href="./index.html#references">REFERENCE</a></li>
+                    <li><a class="navbar__item current-page" href="#">O NÁS</a></li>
+                    <li><a class="navbar__item" href="./contact.html">KONTAKT</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".navbar__hamburger, .cover, .navbar__item");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".navbar__menu, .cover");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
     </header>
-    
+    <section class="text-section">
+        <h1>Reference</h1>
+        <p>Stojí za námi kvalitně vyhotovené zakázky dle konkrétních požadavků zadavatelů podepřené letitými zkušenostmi ve stavebnictví. To, že obrátit se na právě nás je vhodná volba potvrdí naši klienti, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+    </section>
+    <section class="services-container" id="services">
+        <div class="service service--new-buildings">
+            <aside><img class="image-responsive reference__image" src=".\media\reference\hasicska-zbrojnice\reference-hz-last.jpeg" alt="hasicska-zbrojnice"></aside>
+            <div class="service__content">
+                <h2>Hasičská zbrojnice</h2>
+                <p class="service__text">celková rekonstrukce</p>
+        </div>
+        <div class="service service--new-buildings">
+            <aside><img class="image-responsive service__image" src=".\media\reference\pradelna\reference-pradelna-02.jpeg" alt="samoobsluzna-pradelna"></aside>
+            <div class="service__content">
+                <h2>Samoobslužná prádelna</h2>
+                <p class="service__text">stavební úpravy a opravy</p>
+        </div>
+        <div class="service service--new-buildings">
+            <aside><img class="image-responsive service__image" src=".\media\reference\reference-plocha-600w.jpg" alt="nekovni-plochy-restil"></aside>
+            <div class="service__content">
+                <h2>Venkovní plochy Restyl</h2>
+                <p class="service__text">provedení venkovnách ploch</p>
+        </div>
+        </div>
+    </section>
     <footer class="footer-main">
-
+        <h2>Plácneme si pro Váš projekt?</h2>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a class="btn btn--white" href="./contact.html">Nezávazně poptat</a>
     </footer>
 </body>
 </html>
